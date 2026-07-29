@@ -1,0 +1,39 @@
+:root {
+  --text: #bebebe;
+  --text-h: #fafafa;
+  --bg: #23222c;
+  --border: #e5e4e7;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+a:link {
+  color: var(--text);
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: var(--text-h);
+}
