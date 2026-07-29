@@ -22,7 +22,7 @@ function App() {
               </a>
               <a className="row-item" href="https://github.com/pyrudheu/joswo-site" target="_blank">
                 <span>This website</span>
-                <span>spa</span>
+                <span>single page application</span>
               </a>
             </div>
           </div>
