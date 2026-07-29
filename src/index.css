@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root {
   --text: #bebebe;
   --text-h: #fafafa;
   --bg: #23222c;
   --border: #e5e4e7;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* --sans: system-ui, 'Segoe UI', Roboto, sans-serif; */
+  --sans: 'Manrope', system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -31,7 +33,6 @@
 a:link {
   color: var(--text);
   text-decoration: none;
-
 }
 
 a:hover {

@@ -12,6 +12,7 @@
   border-bottom: 1px solid gray;
   padding-top: 15px;
   padding-bottom: 5px;
+  color: var(--text);
 }
 
 .button-icon {
@@ -39,6 +40,7 @@ h1, h2, p {
   padding-top: 10px;
   display:flex;
   flex-direction: row;
+  color: var(--text);
   /* background-color: white; */
   /* border: 2px solid aqua; */
 }
@@ -49,6 +51,7 @@ h1, h2, p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: var(--text);
 }
 
 .main-box {
@@ -61,7 +64,7 @@ h1, h2, p {
 
 section {
   width: 800px;
-  max-width: 100%;
+  max-width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
