@@ -10,6 +10,7 @@ function TextSubmitForm() {
 
     console.log('Submitted:', text);
     setText('');
+    console.log('Statue: ',status);
 
 
     const formData = new FormData(e.currentTarget);
