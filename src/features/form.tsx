@@ -10,15 +10,11 @@ function TextSubmitForm() {
 
     console.log('Submitted:', text);
 
-
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData);
-
     try {
       const response = await fetch('https://gentle-shape-62a4.dheupyru557.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify({message: text}),
       });
 
       if (!response.ok) throw new Error('Network response was not ok');
@@ -36,7 +32,6 @@ function TextSubmitForm() {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        name="message"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Type here..."
