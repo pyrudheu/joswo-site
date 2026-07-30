@@ -9,8 +9,6 @@ function TextSubmitForm() {
 
 
     console.log('Submitted:', text);
-    setText('');
-    console.log('Statue: ',status);
 
 
     const formData = new FormData(e.currentTarget);
@@ -29,12 +27,16 @@ function TextSubmitForm() {
     } catch (error) {
       setStatus('Failed to submit.');
     }
+
+    setText('');
+    console.log('Statue: ',status);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input
         type="text"
+        name="message"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Type here..."
