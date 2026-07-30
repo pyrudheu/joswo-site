@@ -1,5 +1,7 @@
 import './App.css'
 
+import {TextSubmitForm} from './features/form'
+
 function App() {
 
   return (
@@ -39,9 +41,22 @@ function App() {
           </div>
         </section>
 
+        <section>
+          <div>
+            <h3>Submit question</h3>
+            <div>
+              <TextSubmitForm/>
+            </div>
+          </div>
+        </section>
+
       </div>
     </>
   )
 }
+
+
+
+
 
 export default App
